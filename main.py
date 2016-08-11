@@ -1,2 +1,2 @@
 import search
-search.find_element(b, c)
+print(search.find_element([0, 2, 4], 5))
