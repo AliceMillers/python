@@ -1,3 +1,6 @@
-userName = input('What is your name? ')
-print('hi ' + userName);
-#input("Press Enter to continue...");
+my_file = open("input.txt", "r")
+my_string = my_file.read()
+my_file.close()
+my_file = open("output.txt", "a")
+my_file.write(my_string)
+my_file.close()
