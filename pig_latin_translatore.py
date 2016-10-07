@@ -11,3 +11,4 @@ if len(original) > 0 and original.isalpha():
     print (new_word)
 else:
     print ('empty')
+
