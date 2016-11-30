@@ -57,3 +57,36 @@ my_cart.add_item("Milk", 15.9)
 my_cart.add_item("Bread", 6)
 my_cart.add_item("Vodka", 22.5)
 my_cart.remove_item("Vodka")
+
+#about job
+class Employee(object):
+    """Models real-life employees!"""
+    def __init__(self, employee_name):
+        self.employee_name = employee_name
+
+    def calculate_wage(self, hours):
+        self.hours = hours
+        return hours * 20.00
+
+# Add your code below!
+class PartTimeEmployee(Employee):
+    def calculate_wage(self, hours):
+        self.hours = hours
+        return hours * 12.00
+    def full_time_wage(self, hours):
+        return super(PartTimeEmployee, self).calculate_wage(hours)
+milton = PartTimeEmployee("Jack")
+print (milton.full_time_wage)
+
+#triangle function
+class Triangle(object):
+    def __init__(self, angle1, angle2, angle3):
+        self.angle1 = angle1
+        self.angle2 = angle2
+        self.angle3 = angle3
+    number_of_sides = 3
+    def check_angles(self):
+        if self.angle1 + self.angle2 + self.angle3 == 180:
+            return True
+        else:
+            return False
