@@ -76,7 +76,7 @@ class PartTimeEmployee(Employee):
     def full_time_wage(self, hours):
         return super(PartTimeEmployee, self).calculate_wage(hours)
 milton = PartTimeEmployee("Jack")
-print (milton.full_time_wage)
+print (milton.full_time_wage(10))
 
 #triangle function
 class Triangle(object):
@@ -90,3 +90,6 @@ class Triangle(object):
             return True
         else:
             return False
+my_triangle = Triangle(90, 30, 60)
+print (my_triangle.number_of_sides)
+print (my_triangle.check_angles())
