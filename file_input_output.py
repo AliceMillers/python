@@ -7,3 +7,17 @@ for i in my_list:
 
 my_file.close()
 print(my_file)
+
+#2nd example
+read_file = open("text.txt", "r")
+
+
+write_file = open("text.txt", "w")
+
+write_file.write("Not closing files is VERY BAD.")
+
+write_file.close()
+
+
+print (read_file.read())
+read_file.close()
