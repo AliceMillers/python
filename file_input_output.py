@@ -1,3 +1,4 @@
+#1st example
 my_list = [i ** 2 for i in range(1, 11)]
 
 my_file = open("output.txt", "r+")
@@ -21,3 +22,7 @@ write_file.close()
 
 print (read_file.read())
 read_file.close()
+
+#3rd example
+with open("text.txt", "w") as my_file:
+    my_file.write("It's wonderful!")
