@@ -26,3 +26,6 @@ read_file.close()
 #3rd example
 with open("text.txt", "w") as my_file:
     my_file.write("It's wonderful!")
+if my_file.closed == False:
+    my_file.close()
+print (my_file.closed)
