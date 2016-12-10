@@ -1,5 +1,5 @@
-import Person
-import Group
+from person import Person
+from group import Group
 
 group = Group()
 group.add_person(Person("Dmitry", 24))
